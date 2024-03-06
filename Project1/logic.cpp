@@ -36,8 +36,20 @@ void insertionSort(int* array, int size) {
 	}
 }
 
-int* sorted_array_from_two(int* firstArray, int* secondArray, int size) {
-	int* resultingArray = new int[size*2];
+void sorted_array_from_two(int* firstArray, int* secondArray, int* resultingArray, int size) {
 
-	return resultingArray;
+	int j = 0;
+	int q = 0;
+	for (int i = 0; i < size * 2; i++)
+	{
+		if (firstArray[j] < secondArray[q])
+		{
+			resultingArray[i] = firstArray[j];
+			j++;
+		}
+		else {
+			resultingArray[i] = secondArray[q];
+			q++;
+		}
+	}
 }

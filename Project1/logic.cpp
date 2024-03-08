@@ -42,7 +42,7 @@ void sorted_array_from_two(int* firstArray, int* secondArray, int* resultingArra
 	int q = 0;
 	for (int i = 0; i < size * 2; i++)
 	{
-		if (firstArray[j] < secondArray[q])
+		if ((q == size || firstArray[j] < secondArray[q]) && j != size)
 		{
 			resultingArray[i] = firstArray[j];
 			j++;

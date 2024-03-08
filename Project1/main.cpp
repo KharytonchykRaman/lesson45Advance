@@ -20,8 +20,8 @@ int main() {
 	int* secondArray = new int[size];
 	int* resultingArray = new int[size * 2];
 
-	rand_init(firstArray, size, -10, 10);
-	rand_init(secondArray, size, -10, 10);
+	rand_init(firstArray, size, -100, 100);
+	rand_init(secondArray, size, -100, 100);
 	cout << "Unsorted first vector :" << convert_array_string(firstArray, size) << endl;
 	cout << "Unsorted second vector :" << convert_array_string(secondArray, size) << endl;
 
